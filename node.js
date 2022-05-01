@@ -5,8 +5,10 @@ const _=require(`lodash`);
 const { constant } = require("async");
 const homecontent = `Lorem ipsum, dolor sit amet consectetur adipisicing elit.homecontent Excepturi rem ipsum, dolor sit amet consectetur adipisicing elit.homecontent Excepturi ducimus placeat doloducimus placeat dolores, sequi totam mollitia! Dicta veritatis, deleniti ullam voluptatum laudantium, esse ratione fugit quae natus modi amet neque facere explicabo ipsum veniam libero sit officiis delectus repellat nesciunt rerum! Quidem eaque quasi, ullam et iste laboriosam blanditiis tempore sequi!5`;
 
-const aboutcontent=`aaaaaaaaaaaloren70aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa`;
-const contactcontant=`cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc`;
+const aboutcontent=`Hey there ! welcome to this beautiful blog website where you can share your views freely without registering . this website is 
+made and designed by Suryansh Panwar using EJS , node , css . hope you like this webiste , many more changes will come in this webiste in future updates
+so for that stay tunned stay connected`;
+const contactcontant=`contact me through Email panwarsuryansh2gmail.com`;
 
 let composearr =[];
 let key;
@@ -60,7 +62,7 @@ app.get(`/posts/:postname`, (req,res)=>{
         console.log(storedtitle);
     if(reuqestedtitle==storedtitle)
     {      console.log(`yew`);
-        res.render(`post/`,{posttitle:post.title, postmessage:post.message})
+        res.render(`post/post.title`,{posttitle:post.title, postmessage:post.message})
     }
    })
   
