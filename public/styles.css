@@ -1,7 +1,9 @@
 .container-fluid {
     padding-top: 70px;
     padding-bottom: 70px;
+    margin-left: 11rem;
 }
+
 .navbar {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -15,12 +17,17 @@
     color: #1abc9c !important;
 }
 
+/* heading of pages  */
+.heading{
+    margin-top: -4rem;
+}
+
 .footer-paddingg {
 	padding-bottom: 60px;
 }
 
 .footer {
-	position: absolute;
+	position: fixed;
 	text-align: center;
 	bottom: 0;
 	width: 100%;
