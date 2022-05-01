@@ -45,7 +45,7 @@ app.listen(8000, function () {
 app.get(`/`,async (req, res) => {
     
    const all = await User.find().then(res => news = res).catch(err => console.log(err));
-    // console.log(all);   
+     console.log(all);   
     res.render("Home", {"news": all});
 })
 app.get(`/about`, (req, res) => {
@@ -73,7 +73,7 @@ app.post(`/compose`,(req,res)=>{
     //saving the news in databse online
 
     let new_news = new User({name:req.body.messagetitle , post:req.body.message});
-    new_news.save().then(()=> res.status(201).json(new_news)).catch(err => res.status(400).send(err))
+     new_news.save().then(()=> res.status(201).json(new_news)).catch(err => res.status(400).send(err))
    
 
     //news saved in DB
