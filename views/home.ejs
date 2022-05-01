@@ -1,13 +1,15 @@
 <%- include("pirtials/header")  %> 
 
 <h1 class="heading">Home</h1>
-<p><%= homecont %> </p>
-<% arr.forEach(function(element){  %>
-    <h1><%=element.title %> </h1>
-    <p><%= element.message.substring(0,100) + "..."%>
-        <a href="/posts/<%=element.title%>">read more</a> 
-    </p>
-<% }) %> 
+
+
+<% news.forEach(function(e){ %>
+    <div class="" key="<%= e.id %>">
+        <h2 > <%= e.name %></h2>
+        <br>
+        <p><%= e.post %></p>
+    </div>
+  <% }); %>
 
 
 
