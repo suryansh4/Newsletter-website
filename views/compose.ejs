@@ -1,0 +1,21 @@
+<%- include("pirtials/header")  %> 
+
+<h1>Compose</h1>
+<p>
+   
+    <form action="/compose" method="POST">
+        <div class="form-group">
+            <label for="">Title</label>
+            <input  class="form-control" type="text" name="messagetitle" id=""> <br>
+            <label for="">Post</label>
+            <textarea class="form-control" name="message" id="" cols="30" rows="10"></textarea>
+           
+        </div>
+        <button class="btn btn-primary" type="submit"> Publish</button>
+    </form>
+</p>
+
+
+
+
+<%- include("pirtials/footer")  %> 
